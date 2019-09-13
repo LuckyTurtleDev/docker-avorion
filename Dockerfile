@@ -22,10 +22,7 @@ RUN mkdir -p /home/steam/avorion-server \
                 +login anonymous \
 				+force_install_dir /home/steam/avorion-server \
 				+app_update 565060 validate \
-				+quit	
-
-# Create volume for server config
-VOLUME /home/steam/.avorion/galaxies/avorion_galaxy
+				+quit
 
 # Ports required
 EXPOSE 27000
