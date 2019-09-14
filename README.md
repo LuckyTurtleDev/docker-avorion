@@ -1,5 +1,5 @@
-[![Docker Automated build](https://img.shields.io/docker/cloud/automated/lukas1818/avorion?style=flat-square)](https://hub.docker.com/r/lukas/avorion)
-[![Docker Pulls](https://img.shields.io/docker/pulls/lukas1818/avorion.svg?style=flat-square)](https://hub.docker.com/r/lukas/avorion)
+[![Docker Automated build](https://img.shields.io/docker/cloud/automated/lukas1818/avorion?style=flat-square)](https://hub.docker.com/r/lukas1818/avorion)
+[![Docker Pulls](https://img.shields.io/docker/pulls/lukas1818/avorion.svg?style=flat-square)](https://hub.docker.com/r/lukas1818/avorion)
 
 Avorion for Docker
 ==================
@@ -16,7 +16,7 @@ This is a docker image to create a dedicated server.
 Starting the server 
 
 * Create a `/data` directory, this will be mounted into the container.
-* Change the owner of the `/data` directory to uid 1000
+* Change the owner of the `/data` directory to UID 1000
 * Start the server to generate the configfiles.
 * Stop the server.
 * Edit the configfiles as you like.
