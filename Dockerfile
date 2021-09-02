@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # Install dependencies
 RUN apt-get update \
- && apt-get install -y curl lib32gcc1
+ && apt-get install -y curl lib32gcc-s1
 
 # Add steam user
 RUN useradd -m -u 1000 steam
