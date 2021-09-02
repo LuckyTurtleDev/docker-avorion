@@ -1,4 +1,4 @@
-FROM debian:stable-slim
+FROM debian:stable-slim AS fetcher
 
 LABEL git=https://github.com/Lukas1818/docker-avorion
 
@@ -16,13 +16,28 @@ USER steam
 RUN mkdir -p /home/steam/steamcmd \
  && curl -s https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz | tar -vxz -C /home/steam/steamcmd
 
-# install server
+# fetch server
 RUN mkdir -p /home/steam/avorion-server \
  && /home/steam/steamcmd/steamcmd.sh \
                 +login anonymous \
 				+force_install_dir /home/steam/avorion-server \
 				+app_update 565060 validate \
 				+quit
+
+
+FROM debian:stable-slim
+
+# Install dependencies
+RUN apt-get update \
+ && apt-get install -y ca-certificates
+
+# Add steam user
+RUN useradd -m -u 1000 steam
+USER steam
+
+# install server
+RUN mkdir -p /home/steam/avorion-server
+COPY --from=fetcher /home/steam/avorion-server /home/steam/avorion-server
 
 # Ports required
 EXPOSE 27000
