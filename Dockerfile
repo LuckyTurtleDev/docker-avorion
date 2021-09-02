@@ -1,7 +1,5 @@
 FROM debian:stable-slim AS fetcher
 
-LABEL git=https://github.com/Lukas1818/docker-avorion
-
 ENV DEBIAN_FRONTEND noninteractive
 
 # Install dependencies
@@ -26,6 +24,12 @@ RUN mkdir -p /home/steam/avorion-server \
 
 
 FROM debian:stable-slim
+
+LABEL org.opencontainers.image.url="https://gitlab.com/Lukas1818/docker-avorionldx/container_registry"
+LABEL org.opencontainers.image.title="Docker image for Avorion's dedicated server"
+LABEL org.opencontainers.image.source="https://gitlab.com/Lukas1818/docker-avorion"
+
+ENV DEBIAN_FRONTEND noninteractive
 
 # Install dependencies
 RUN apt-get update \
