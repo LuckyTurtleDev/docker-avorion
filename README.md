@@ -51,6 +51,6 @@ The server data will be saved locally on the host machine within the data folder
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/Lukas1818/docker-avorion/blob/master/CONTRIBUTING.md)
+See [CONTRIBUTING.md](https://gitlab.com/Lukas1818/docker-avorion/-/blob/master/CONTRIBUTING.md)
 
 
