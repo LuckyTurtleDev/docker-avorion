@@ -1,6 +1,3 @@
-[![Docker Automated build](https://img.shields.io/docker/cloud/automated/lukas1818/avorion?style=flat-square)](https://hub.docker.com/r/lukas1818/avorion)
-[![Docker Pulls](https://img.shields.io/docker/pulls/lukas1818/avorion.svg?style=flat-square)](https://hub.docker.com/r/lukas1818/avorion)
-
 Avorion for Docker
 ==================
 
