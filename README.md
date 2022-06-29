@@ -31,7 +31,7 @@ or use docker-compose:
 version: '3.3'
 services:
     avorion-docker:
-        image: lukas1818/avorion  
+        image: registry.gitlab.com/luckyturtledev/avorion 
         container_name: avorion
         volumes:
             - './data:/home/steam/.avorion/galaxies/avorion_galaxy'
@@ -51,6 +51,6 @@ The server data will be saved locally on the host machine within the data folder
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://gitlab.com/Lukas1818/docker-avorion/-/blob/master/CONTRIBUTING.md)
+See [CONTRIBUTING.md](https://gitlab.com/LuckyTurtleDev/docker-avorion/-/blob/master/CONTRIBUTING.md)
 
 

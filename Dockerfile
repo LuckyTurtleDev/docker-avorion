@@ -25,9 +25,9 @@ RUN mkdir -p /home/steam/avorion-server \
 
 FROM debian:stable-slim
 
-LABEL org.opencontainers.image.url="https://gitlab.com/Lukas1818/docker-avorionldx/container_registry"
+LABEL org.opencontainers.image.url="https://gitlab.com/luckyturtledev/docker-avorionldx/container_registry"
 LABEL org.opencontainers.image.title="Docker image for Avorion's dedicated server"
-LABEL org.opencontainers.image.source="https://gitlab.com/Lukas1818/docker-avorion"
+LABEL org.opencontainers.image.source="https://gitlab.com/LuckyTurtleDev/docker-avorion"
 
 ENV DEBIAN_FRONTEND noninteractive
 
